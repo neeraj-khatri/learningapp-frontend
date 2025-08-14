@@ -36,7 +36,7 @@ function handleEmail(e){
     };
 
     try {
-      const response = await fetch('https://learningapp-frontend.onrender.com/signup', {
+      const response = await fetch('https://learningapp-backend-lvhz.onrender.com/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
