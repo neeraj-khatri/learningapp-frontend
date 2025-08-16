@@ -1,4 +1,5 @@
 import React from 'react';
+import './signup.css';
 
 
 const Signup = () => {
@@ -60,14 +61,14 @@ function handleEmail(e){
   }
 
   return (
-    <div class="newline">
-        <h1>Sign Up Teacher</h1>
-      <form>
-        <input type="name" onChange={handleName} placeholder="name" name="name"></input><br></br>
-        <input type="name" onChange={handleEmail} placeholder="email" name="email"></input><br></br>
-        <input type="text" onChange={handleUsername} placeholder="username" name="username"></input> <br></br>
-        <input type="text" onChange={handlePassword} placeholder="password" name="password"></input><br></br>
-        <button onClick={formSubmit}>Submit</button>
+    <div className="signup-container">
+      <h1 className="signup-title">Sign Up Teacher</h1>
+      <form className="signup-form">
+        <input className="signup-input" type="text" onChange={handleName} placeholder="Name" name="name" />
+        <input className="signup-input" type="email" onChange={handleEmail} placeholder="Email" name="email" />
+        <input className="signup-input" type="text" onChange={handleUsername} placeholder="Username" name="username" />
+        <input className="signup-input" type="password" onChange={handlePassword} placeholder="Password" name="password" />
+        <button className="signup-button" onClick={formSubmit}>Submit</button>
       </form>
     </div>
   );
